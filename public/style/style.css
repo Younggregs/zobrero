@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech');
+
+
+
+body{
+  background: whitesmoke
+}
+
+
+a{
+    color:black;
+}
+
+.chat-header a{
+  color: white;
+}
+
+.footer a{
+  color: white;
+}
+
+.profile-details a{
+  color: white;
+}
+
+#app-name a{
+  color:white;
+}
+
+.navigation{
+  background-color: darkslateblue;
+  font-size: 1.48em;
+  padding-top:5px;
+  height: 70px;
+}
+
+.side-menu{
+  position: fixed;
+  padding-left: 30px;
+  margin-top: 100px;
+ 
+}
+
+.cross-roads{
+  padding-top: 15px;
+}
+
+.search-box{
+  background-color: darkslateblue;
+  font-size: 1.48em;
+  padding-top:5px;
+  height: 60px;
+}
+
+.navbar{
+  background-color:darkslateblue;
+  padding-top:5px;
+
+}
+
+.calls{
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+
+
+.welcome {
+  background-color: darkslateblue;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+
+.welcome-text-lg{
+  font-size: 1.9em;
+  font-family: "Permanent Marker";
+  position: fixed;
+  left: 40%;
+  top: 40%;
+}
+
+.welcome-text-sm{
+  font-family: "Permanent Marker";
+  font-size: 1.49em;
+  position: fixed;
+  left: 20%;
+  top: 40%;
+}
+
+
+.chats{
+  margin-bottom: 30px;
+}
+
+.profile-image{
+  font-size: 0;
+  margin: 0 20 20 0;
+  text-align: center;
+  box-shadow: 0 0 1px black;
+  font-size: 0;
+  text-align: center ;
+  width: auto;
+  height: 300px;
+  background-color: white;
+  line-height: 300px;
+}
+
+.image{
+  display: inline-block;
+  vertical-align: middle;
+  height: 300px;
+}
+
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profile-view{
+  margin-top:30px;
+}
+
+
+.profile-details{
+  background-color: darkslateblue;
+  padding:10px;
+  color:white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.err-msg{
+  color: orange;
+  font-weight: bold;
+}
+
+.tag-name{
+  background-color:darkslateblue;
+  color:white;
+  text-align: center;
+  padding-top:10px;
+  height: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.glyphs-home{
+  color:white;
+  font-size: 1.9em;
+
+}
+
+.glyphs-search{
+  color: white;
+  font-size:1.7em;
+
+}
+
+.glyphs-profile{
+  color: white;
+  font-size:1.5em;
+
+}
+
+.glyphs{
+  color: white;
+  font-size:1.5em;
+}
+
+
+.bottomNav{
+  padding-top:5px;
+
+}
+
+.appname-sm{
+  height: 40px;
+  padding-top:5px;
+  color:white;
+  text-align: center;
+  background-color: darkslateblue;
+  font-family: "Audiowide";
+}
+
+
+.chat-list{
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  height: 450px;
+}
+
+.heading-show{
+  margin-top: 80px;
+}
+
+.app-landingsearch{
+  color: white;
+  font-weight: bold;
+}
+
+.landing-page{
+  padding-bottom: 40px;
+  border-bottom: 40px;
+}
+
+#outer_wrapper {
+    overflow: auto;
+    min-width: 100%;
+}
+#outer_wrapper #inner_wrapper {
+    min-width: 3000px; /* If you have more elements, increase the width accordingly */
+}
+#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
+    width: 300px;
+    height:300px;
+    float: left;
+    margin: 0 4px 0 0;
+}
+
+.box{
+  background-color: orange;
+}
+
+#outer_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background-color: #fff;
+  min-width: 100%;
+  min-height: 200px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.card--content {
+  background-color: orange;
+  min-width: 200px;
+  margin: 5px;
+}
+
+
+.distance-from-you{
+  text-align: center;
+  font-family: "Share Tech";
+}
+
+.favorite-glyph{
+  color:red;
+}
+.search{
+  text-align: center;
+  font-family: "Share Tech";
+}
+
+.profile-options{
+  text-align: left;
+}
+
+.done-cliche{
+  text-align: center;
+  font-size: 3.5em;
+  font-family: "Share Tech";
+}
+
+.find-me-cliche{
+  text-align: center;
+  font-size: 3.5em;
+  font-family: "Share Tech";
+}
+
+.done-image{
+  object-fit: contain;
+}
+
+.work-image{
+  object-fit: contain;
+}
+
+.call-image{
+  object-fit: contain;
+}
+
+.fade-show{
+
+}
+
+.how-it-works{
+  text-align: center;
+  font-size: 3.5em;
+  font-family: "Share Tech";
+}
+
+.how-it-works-sm{
+  text-align: center;
+  font-size: 1.8em;
+  color:black;
+  font-family: "Share Tech";
+}
+
+.cliche{
+  font-size: 2.5em;
+  font-family: "Share Tech";
+  padding-top: 60px;
+}
+
+.cliche-sm{
+  font-size: 1.8em;
+  font-family: "Share Tech";
+  padding-top: 20px;
+}
+
+.call-cliche{
+  text-align: center;
+  font-size: 3.5em;
+  font-family: "Share Tech";
+  padding-top: 60px;
+}
+
+.work-cliche{
+  text-align: center;
+  font-size: 3.5em;
+  padding-top: 60px;
+  font-family: "Share Tech";
+}
+
+.done-cliche{
+  text-align: center;
+  font-size: 3.5em;
+  padding-top: 60px;
+  font-family: "Share Tech";
+}
+
+.section-1{
+  padding-top:20px;
+  padding-bottom: 50px;
+}
+
+.chat-table{
+    background-color:white;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-top-color: white;
+    border-radius: 5px;
+    height: 350px;
+    overflow: auto;
+}
+
+
+.chat-table-sm{
+  background-color: white;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-top-width: 10px;
+  border-top-style: solid;
+  border-top-color: white;
+  border-radius: 5px;
+}
+
+
+
+.chat-from{
+  text-align: left;
+  background-color: rgb(234, 239, 241);
+  max-width: 60%;
+  color: black;
+  position: relative;
+  padding: 5px;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: white;
+  border-radius: 5px;
+
+}
+
+.chat-to{
+  text-align: right;
+  background-color:rgb(234, 239, 241);
+  color: black;
+  max-width: 60%;
+  left: 40%;
+  position: relative;
+  padding: 5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+.section-2{
+  padding-top:20px;
+  padding-bottom: 50px;
+}
+
+.section-3{
+  padding-top:20px;
+  padding-bottom: 50px;
+}
+
+.no-chat{
+  text-align: center;
+  background-color: white;
+  color:darkslateblue;
+  font-size:1.3em;
+  font-weight: bold;
+  margin-top: 70px;
+  border-radius: 5px;
+  height: 350px;
+  line-height: 350px;
+}
+
+.chat-header{
+  color:white;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.app-name{
+  font-family: "Share Tech";
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.heading{
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Share Tech";
+}
+
+.profile{
+  text-align: center;
+}
+
+.footer{
+  background-color: darkslateblue;
+  height: 300px;
+  color: white;
+  font-size: .89em;
+}
+
+.profile-display{
+  font-size: .5em;
+}
+
+
+.about{
+  padding-top: 15px;
+}
+
+.go-to-top{
+  background-color: darkgrey;
+  text-align: center;
+  padding: 5px;
+  font-family: "Share Tech";
+}
+
+.copyright{
+  background-color: darkgrey;
+  text-align: center;
+  font-size: .98em;
+  padding: 15px;
+  font-family: "Share Tech";
+}
+
+
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 3px;
+  display: inline-block;
+  border: 1px solid white;
+  min-width: 150px;
+  height: 200px;
+  background: black;
+}
+
+.scrolling-wrapper, .scrolling-wrapper-flexbox {
+  height: 150px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/**********search for mobile UI/UX*********************/
+
+.scrolling-wrapper-search {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper-search-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card-search {
+  flex: 0 0 auto;
+  margin-right: 3px;
+  display: inline-block;
+  border: 1px solid white;
+  min-width: 150px;
+  height: 200px;
+  background: black;
+}
+
+.scrolling-wrapper-search, .scrolling-wrapper-search-flexbox {
+  height: 100%;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
