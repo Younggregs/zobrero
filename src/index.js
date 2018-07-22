@@ -8,6 +8,7 @@ import Help from './components/village/Help'
 import SignIn from './components/village/Sign In'
 import SignUp from './components/village/Sign Up'
 import SignUpObrero from './components/village/Sign Up Obrero'
+import Appointment from './components/village/Appointment'
 import Calls from './components/village/Calls'
 import Profile from './components/village/Profile'
 import Search from './components/village/Search'
@@ -32,6 +33,7 @@ import Logout from './components/village/Logout'
                 <Route exact path="/signin" component={SignIn}/>
                 <Route exact path="/signup" component={SignUp}/>
                 <Route exact path="/signup_obrero" component={SignUpObrero}/>
+                <Route exact path="/appointment/:client_id" component={Appointment}/>
                 <Route exact path="/calls" component={Calls}/>
                 <Route exact path="/chats" component={Chats}/>
                 <Route exact path="/chats/:profile_id" component={Chats}/>

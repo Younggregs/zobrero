@@ -128,6 +128,43 @@ img{
   vertical-align: middle;
 }
 
+.success-msg{
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.notif-status{
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.notification-status{
+ width: 520px;
+ height: 50px;
+ overflow: scroll;
+ padding:5px;
+ margin: 20px;
+ margin-top:50px;
+ background-color: white;
+
+}
+
+.notif-buttons{
+  padding:5px;
+}
+
+.notif-title{
+  font-weight: bold;
+  text-align: center;
+}
+
+.demo{
+  overflow: auto;
+}
+
 .profile-view{
   margin-top:30px;
 }
@@ -216,43 +253,6 @@ img{
   padding-bottom: 40px;
   border-bottom: 40px;
 }
-
-#outer_wrapper {
-    overflow: auto;
-    min-width: 100%;
-}
-#outer_wrapper #inner_wrapper {
-    min-width: 3000px; /* If you have more elements, increase the width accordingly */
-}
-#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
-    width: 300px;
-    height:300px;
-    float: left;
-    margin: 0 4px 0 0;
-}
-
-.box{
-  background-color: orange;
-}
-
-#outer_wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.card {
-  background-color: #fff;
-  min-width: 100%;
-  min-height: 200px;
-  display: flex;
-  overflow-x: auto;
-}
-
-.card--content {
-  background-color: orange;
-  min-width: 200px;
-  margin: 5px;
-}
-
 
 .distance-from-you{
   text-align: center;
@@ -505,13 +505,13 @@ img{
   margin-right: 3px;
   display: inline-block;
   border: 1px solid white;
-  min-width: 150px;
-  height: 200px;
-  background: black;
+  min-width: 50px;
+  height: 100px;
+  background: white;
 }
 
 .scrolling-wrapper, .scrolling-wrapper-flexbox {
-  height: 150px;
+  height: 50px;
   width: 100%;
   -webkit-overflow-scrolling: touch;
 }
