@@ -38,7 +38,7 @@ export default class SignupForm extends React.Component {
     }
 
 
-    
+
 
   }
 
@@ -93,7 +93,7 @@ export default class SignupForm extends React.Component {
 
 
 
-  async submitForm(){    
+  async submitForm(){
 
     var firstname = document.getElementById("firstname").value
     var lastname = document.getElementById("lastname").value
@@ -102,7 +102,7 @@ export default class SignupForm extends React.Component {
     var whatdoyoudo = document.getElementById("whatdoyoudo").value
     var whatcanyoudo = document.getElementById("whatcanyoudo").value
 
-    
+
 
     var formData = new FormData()
     formData.append('firstname', firstname)
@@ -111,16 +111,16 @@ export default class SignupForm extends React.Component {
     formData.append('password', password)
     formData.append('whatdoyoudo', whatdoyoudo)
     formData.append('whatcanyoudo', whatcanyoudo)
-   
+
 
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/add_employee/', {
-      
+      const res = await fetch('http://198.187.30.71:8000/add_employee/', {
+
        body :formData,
        method: 'POST',
-      
-    
+
+
       });
       const statement = await res.json();
       this.setState({
@@ -216,14 +216,14 @@ const formInstance = (
     />
  </Col>
 
- 
+
  <Col lg={6} md={6} sm={12} xs={12}>
     <FormGroup>
       <ControlLabel>What Do You Do</ControlLabel>
-               <FormControl 
-               id="category_1" 
-               componentClass="select" 
-               placeholder="select" 
+               <FormControl
+               id="category_1"
+               componentClass="select"
+               placeholder="select"
                onChange={this.getCategoryIdOne.bind(this)}>
         <option value="0">Select category</option>
         {this.state.categorylist.map(item => (
@@ -232,7 +232,7 @@ const formInstance = (
 
               ))}
       </FormControl>
-  
+
 
              <FormControl componentClass="select" placeholder="select" name="whatdoyoudo" id="whatdoyoudo">
                <option value="0">Select specialty</option>
@@ -275,10 +275,10 @@ const formInstance = (
 
 <Col lg={6} md={6} sm={12} xs={12}>
 
-    <FieldGroup 
-    id="password" 
-    label="Password" 
-    type="password" 
+    <FieldGroup
+    id="password"
+    label="Password"
+    type="password"
     name="password"/>
 
 </Col>
@@ -293,13 +293,13 @@ const formInstance = (
       <span></span>
     )}
 
-    {this.state.statement.code ? ( 
+    {this.state.statement.code ? (
        <span><Redirect to='/home'/></span>
     ) : (
       <span></span>
     )}
 
-  </Col>  
+  </Col>
 </Row>
 
 
