@@ -1,2 +1,2 @@
 export const URL = process.env.API_URL;
-export const LOGIN = "http://127.0.0.1:8000/auth";
+export const LOGIN = "http://198.187.30.71:8000/auth";
