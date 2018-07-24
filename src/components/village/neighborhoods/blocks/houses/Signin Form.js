@@ -9,27 +9,27 @@ export default class SigninForm extends React.Component {
     statement : []
   }
 
-  async submitForm(){    
+  async submitForm(){
 
     var email = document.getElementById("email").value
     var password = document.getElementById("password").value
-   
 
-    
+
+
 
     var formData = new FormData()
     formData.append('email', email)
     formData.append('password', password)
-   
+
 
 
     try {
       const res = await fetch('http://198.187.30.71:8000/signin/', {
-      
+
        body :formData,
        method: 'POST',
-      
-    
+
+
       });
       const statement = await res.json();
       this.setState({
@@ -100,10 +100,10 @@ const formInstance = (
   </Col>
 
   <Col lg={6} md={6} sm={12} xs={12}>
-    <FieldGroup 
-    id="password" 
-    label="Password" 
-    type="password" 
+    <FieldGroup
+    id="password"
+    label="Password"
+    type="password"
     name="password"/>
   </Col>
 </Row>
@@ -116,20 +116,27 @@ const formInstance = (
       <span></span>
     )}
 
-    {this.state.statement.code ? ( 
+    {this.state.statement.code ? (
        <span><Redirect to='/home'/></span>
     ) : (
       <span></span>
     )}
 
-  </Col>  
+  </Col>
 </Row>
 
-  <Row>
-  <Col lg={6} lgOffset={4} md={6} mdOffset={4} sm={12} xs={12}>
-    <Button bsStyle="success" onClick={this.submitForm.bind(this)}>Sign in</Button>
-  </Col>
-  </Row>
+<Row>
+<Col lg={4} lgOffset={4} md={4} mdOffset={4} sm={12} xs={12}>
+  <Button bsStyle="success" onClick={this.submitForm.bind(this)}>Sign in</Button>
+</Col>
+
+<Col lg={4} md={4} sm={12} xs={12}>
+<p><Link to="forgot_password">
+    Forgot password?
+    </Link>
+</p>
+</Col>
+</Row>
 
   </form>
   </section>

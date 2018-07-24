@@ -16,9 +16,11 @@ import EditProfile from './components/village/Edit Profile'
 import WorkHistory from './components/village/Work History'
 import Review from './components/village/Review'
 import FavoriteWorkers from './components/village/Favorite Workers'
-import Notifications from './components/village/Notification'
+import Notification from './components/village/Notification'
 import Phone from './components/village/Phone'
 import Chats from './components/village/Chats'
+import ForgotPassword from './components/village/Forgot Password'
+import ResetPassword from './components/village/Reset Password'
 import Logout from './components/village/Logout'
 
       class App extends React.Component {
@@ -44,7 +46,9 @@ import Logout from './components/village/Logout'
                 <Route exact path="/work_history" component={WorkHistory}/>
                 <Route exact path="/reviews" component={Review}/>
                 <Route exact path="/favorite_workers" component={FavoriteWorkers}/>
-                <Route exact path="/notification" component={Notifications}/>
+                <Route exact path="/notification" component={Notification}/>
+                <Route exact path="/forgot_password" component={ForgotPassword}/>
+                <Route exact path="/reset_password/:reset_code" component={ResetPassword}/>
                 <Route exact path="/logout" component={Logout}/>
               </div>
             </Router>
