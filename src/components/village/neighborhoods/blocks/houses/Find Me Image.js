@@ -1,12 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Image } from 'react-bootstrap'
 
 export default class FindMeImage extends React.Component {
        render() {
          return (
-           <section className="fine-me-image">
-               <img width={550} height={550} src={ require ('./images/client_1.jpg') } alt="thumbnail"/>
-           </section>
+           <section className="profile-image">
+            <div class="image">
+               <Image src={ require ('./images/search-field.jpg') } alt="thumbnail" responsive/>
+            </div>
+          </section>
          )
        }
   }
+ 
