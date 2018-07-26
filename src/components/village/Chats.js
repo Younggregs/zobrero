@@ -19,32 +19,34 @@ export default class Chat extends React.Component {
     const auth = localStorage.getItem('auth_code')
     console.log(auth)
 
-    
+
 
     try {
       const res = await fetch('http://198.187.30.71:8000/chatclients/', {
-  
+
         headers : {
           'Authorization' : 'Token ' + auth,
-          
+
         },
-      
+
         });
       const chat_list = await res.json();
-      this.setState({
-        chat_list
-      });
+
     } catch (e) {
       console.log(e);
     }
   }
 
+
+
+
   renderChat(){
     this.state.show_chatbox = true
     this.setState({ show_chatbox: true })
     this.switchState()
-   
   }
+
+
 
   setParameters(chat_id,client_id){
     this.state.chat_id = chat_id
@@ -64,11 +66,32 @@ export default class Chat extends React.Component {
 
   }
 
+
+
+  emptyResult(){
+
+    var empty_set = false
+
+    if(this.state.chat_list.length <= 0 ){
+      empty_set = true
+    }
+
+    return empty_set
+
+
+  }
+
+
+
+
+
+
+
       render(){
-       
+
         return (
               <div className="chats">
-                
+
                 <Col lg={12} md={12} smHidden xsHidden>
                 <Grid>
                 <Row>
@@ -83,18 +106,27 @@ export default class Chat extends React.Component {
                    <Row>
                   <Col lg={6} md={6} sm={12} xs={12}>
                   <Navbar>
-                   
+
                     <p className="chat-header">Chats</p>
-                  
+
                  </Navbar>
                   <div className="chat-list">
-                 { this.state.chat_list.map(item =>
-                 
-                  <div className="chats">
-                    <p><Button onClick={this.setParameters(item.chat_id, item.client_id)} onClick={this.renderChat.bind(this)}>{item.name}</Button></p>
-                  </div>
-      
-                )}
+              {this.emptyResult() ? (
+                  <p className="no-chat">No chat list yet</p>
+              ) : (
+                <span>
+
+                {this.state.chat_list.map(item =>
+
+                 <div className="chats">
+                   <p><Button onClick={this.setParameters(item.chat_id, item.client_id)} onClick={this.renderChat.bind(this)}>{item.name}</Button></p>
+                 </div>
+
+               )}
+
+                </span>
+              )}
+
 
 
                   </div>
@@ -110,10 +142,10 @@ export default class Chat extends React.Component {
                         <div>
                         { this.state.show_chatbox ? (
                           <Messenger chat_id={this.state.chat_id} client_id={this.state.client_id}/>
-                        
+
                            ):(
                               <p className="no-chat">No chats yet</p>
-                       
+
                        )}
                       </div>
                     )}
@@ -139,18 +171,26 @@ export default class Chat extends React.Component {
                    <Row>
                   <Col sm={12} xs={12} lgHidden mdHidden>
                   <Navbar>
-                   
+
                     <p className="chat-header" >Chats</p>
-                  
+
                  </Navbar>
-                  <div className="chat-list">
-                 { this.state.chat_list.map(item =>
-                 
-                  <div className="chats">
-                     <p><Button onClick={this.setParameters(item.chat_id, item.client_id)} onClick={this.renderChat.bind(this)}>{item.name}</Button></p>
-                  </div>
-      
-                )}
+              <div className="chat-list">
+                {this.emptyResult() ? (
+                  <p className="no-chat">No chat list yet</p>
+                    ) : (
+                <span>
+
+                {this.state.chat_list.map(item =>
+
+                 <div className="chats">
+                   <p><Button onClick={this.setParameters(item.chat_id, item.client_id)} onClick={this.renderChat.bind(this)}>{item.name}</Button></p>
+                 </div>
+
+               )}
+
+                </span>
+              )}
                   </div>
                  </Col>
                  </Row>
@@ -160,31 +200,31 @@ export default class Chat extends React.Component {
                   <Row>
                    <Col sm={12} md={12} lgHidden mdHidden>
 
-                   
-              
+
+
                     {this.props.match.params.profile_id ? (
                         <Messenger client_id={this.props.match.params.profile_id}/>
                       ) : (
                         <div>
                         { this.state.show_chatbox ? (
                           <Messenger chat_id={this.state.chat_id} client_id={this.state.client_id}/>
-                        
+
                            ):(
                               <p className="no-chat">No chats yet</p>
-                       
+
                        )}
                       </div>
                     )}
-        
-                     
-                   
+
+
+
                   </Col>
                  </Row>
 
 
                  )}
                  </Col>
-                
+
               </div>
          )
      }

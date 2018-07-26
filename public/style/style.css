@@ -4,7 +4,7 @@
 
 
 body{
-  background: whitesmoke
+  background: white;
 }
 
 
@@ -13,7 +13,7 @@ a{
 }
 
 .chat-header a{
-  color: white;
+  color: darkslateblue;
 }
 
 .footer a{
@@ -24,22 +24,31 @@ a{
   color: white;
 }
 
+
 #app-name a{
-  color:white;
+  color:black;
+}
+
+.app-landingsearch a{
+  color:black;
 }
 
 .navigation{
-  background-color: darkslateblue;
+  background-color: white;
+  border-bottom: 1px;
+  border-bottom-color: black;
+  border-bottom-style: groove;
   font-size: 1.48em;
   padding-top:5px;
   height: 70px;
 }
 
+
 .side-menu{
   position: fixed;
   padding-left: 30px;
   margin-top: 100px;
- 
+
 }
 
 .cross-roads{
@@ -54,9 +63,9 @@ a{
 }
 
 .navbar{
-  background-color:darkslateblue;
+  background-color:white;
+  color: darkslateblue;
   padding-top:5px;
-
 }
 
 .calls{
@@ -195,25 +204,25 @@ img{
 }
 
 .glyphs-home{
-  color:white;
+  color:darkslateblue;
   font-size: 1.9em;
 
 }
 
 .glyphs-search{
-  color: white;
+  color: darkslateblue;
   font-size:1.7em;
 
 }
 
 .glyphs-profile{
-  color: white;
+  color: darkslateblue;
   font-size:1.5em;
 
 }
 
 .glyphs{
-  color: white;
+  color: darkslateblue;
   font-size:1.5em;
 }
 
@@ -234,8 +243,10 @@ img{
 
 
 .chat-list{
-  background-color: white;
+  background-color: white ;
   border-radius: 5px;
+  border-color: darkslateblue;
+  border-style: dotted;
   padding: 20px;
   height: 450px;
 }
@@ -245,7 +256,7 @@ img{
 }
 
 .app-landingsearch{
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
@@ -434,7 +445,7 @@ img{
 }
 
 .chat-header{
-  color:white;
+  color:darkslateblue;
   font-size: 1.3em;
   font-weight: bold;
 }
