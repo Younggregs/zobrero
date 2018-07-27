@@ -57,14 +57,14 @@ export default class SearchView extends React.Component {
     emptyResult(){
 
       var empty_set = false
-    
+
       if(this.state.search_result.length <= 0 ){
         empty_set = true
       }
-    
+
       return empty_set
-      
-    
+
+
     }
 
 
@@ -72,7 +72,7 @@ export default class SearchView extends React.Component {
       if(media != ""){
         this.state.media = 'http://198.187.30.71' + media
       }
-       
+
     }
 
 
@@ -84,7 +84,7 @@ export default class SearchView extends React.Component {
 
       return true
     }
-    
+
 
 
       render() {
@@ -96,15 +96,15 @@ export default class SearchView extends React.Component {
              <Form inline>
              <FormGroup>
               <InputGroup>
-                <FormControl 
+                <FormControl
                   id="search_phrase"
-                  type="text" 
+                  type="text"
                   name="search_phrase"
                   placeholder="Find help...  "
                   inputRef={(ref) => { this.inputSearchPhrase = ref; }}
                 />
 
-      
+
       <InputGroup.Button>
         <Button onClick={this.getSearchPhrase.bind(this)}><Glyphicon glyph="search"/></Button>
       </InputGroup.Button>
@@ -120,7 +120,7 @@ export default class SearchView extends React.Component {
           {this.emptyResult() ? (
 
                <p className="err-msg">No result found for <i>{this.state.search_phrase}</i></p>
-      
+
           ) : (
 
             <div className="scrolling-wrapper-search">
@@ -139,7 +139,7 @@ export default class SearchView extends React.Component {
           </Thumbnail>
         )}
 
-     
+
 
       </div>
 
@@ -148,12 +148,12 @@ export default class SearchView extends React.Component {
 
     </div>
 
-          )} 
+          )}
 
 
-    
 
-     
+
+
         </div>
       ) : (
         <span></span>
@@ -161,6 +161,6 @@ export default class SearchView extends React.Component {
 
     </div>
       )
-    
+
   }
 }
