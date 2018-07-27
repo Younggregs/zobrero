@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Grid, Col, Row,Button, Form, Thumbnail, FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Button, Form, Thumbnail, FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
 import ProfileInfo from './blocks/houses/Profile Info.js';
-import BuzzMe from './blocks/houses/Buzz Me.js';
 import DistanceFromYou from './blocks/houses/Distance From You.js';
 import ProfileImage from './blocks/houses/Profile Image.js';
 import ProfileOptions from './blocks/houses/Profile Options.js';
@@ -13,6 +12,7 @@ export default class SearchView extends React.Component {
   state = {
     search_result: [],
     search_phrase:"",
+    media: "",
     is_search: false,
     };
 
@@ -23,7 +23,7 @@ export default class SearchView extends React.Component {
       try {
         const res = await fetch('http://198.187.30.71:8000/search/',{
 
-        form :formData,
+        body :formData,
         method: 'POST'
 
         });
@@ -46,10 +46,45 @@ export default class SearchView extends React.Component {
     }
 
     getSearchPhrase(){
-      var search_phrase = document.getElementById("search_phrase").value;
+      var search_phrase = this.inputSearchPhrase.value;
       this.setSearchPhrase(search_phrase);
 
     }
+
+
+
+
+    emptyResult(){
+
+      var empty_set = false
+    
+      if(this.state.search_result.length <= 0 ){
+        empty_set = true
+      }
+    
+      return empty_set
+      
+    
+    }
+
+
+    setMedia(media){
+      if(media != ""){
+        this.state.media = 'http://198.187.30.71' + media
+      }
+       
+    }
+
+
+    gotMedia(){
+
+      if(this.state.media == ""){
+        return false
+      }
+
+      return true
+    }
+    
 
 
       render() {
@@ -78,20 +113,33 @@ export default class SearchView extends React.Component {
              </Form>
             </div>
 
-             {this.state.is_search ? (
+          {this.state.is_search ? (
 
-             <div className="search-view">
+          <div className="search-view">
 
+          {this.emptyResult() ? (
 
-     <div className="scrolling-wrapper-search">
+               <p className="err-msg">No result found for <i>{this.state.search_phrase}</i></p>
+      
+          ) : (
 
-     {this.state.search_result.map(item => (
+            <div className="scrolling-wrapper-search">
+
+      {this.state.search_result.map(item => (
       <div className="card-search">
+        {this.setMedia(item.dp)}
 
-
-      <Thumbnail src={ require ('./blocks/houses/images/web designer.jpg') } alt="client image">
-      <ProfileInfo firstname={item.firstname} lastname={item.lastname} talent={item.talent}/>
+        {this.gotMedia() ? (
+      <Thumbnail src= { `${this.props.media}` } alt="client image">
+       <ProfileInfo id={item.account_id} firstname={item.firstname} lastname={item.lastname} phone={item.phone} talent={item.talent}/>
       </Thumbnail>
+        ) : (
+          <Thumbnail src={ require ('./blocks/houses/images/anonn.png') } alt="client image">
+            <ProfileInfo id={item.account_id} firstname={item.firstname} lastname={item.lastname} phone={item.phone} talent={item.talent}/>
+          </Thumbnail>
+        )}
+
+     
 
       </div>
 
@@ -99,6 +147,11 @@ export default class SearchView extends React.Component {
     ))}
 
     </div>
+
+          )} 
+
+
+    
 
      
         </div>
