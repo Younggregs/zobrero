@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button, Collapse, Well } from 'react-bootstrap';
+import React from 'react'
+import { Button, Collapse, Well, Col } from 'react-bootstrap'
 
 export default class BuzzMe extends React.Component {
   constructor(props, context) {
@@ -12,7 +12,8 @@ export default class BuzzMe extends React.Component {
 
   render() {
     return (
-      <div>
+      <span>
+        <Col smHidden xsHidden>
         <Button bsStyle="primary" onClick={() => this.setState({ open: !this.state.open })}>
           Buzzme
         </Button>
@@ -23,7 +24,12 @@ export default class BuzzMe extends React.Component {
             </Well>
           </div>
         </Collapse>
-      </div>
+        </Col>
+
+        <Col lgHidden mdHidden>
+        <Button>{this.props.phone}</Button>
+        </Col>
+      </span>
     );
   }
 }
