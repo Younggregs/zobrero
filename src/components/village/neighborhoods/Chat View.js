@@ -1,6 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Grid , Row, Col } from 'react-bootstrap';
+import React from 'react'
 
 export default class ChatView extends React.Component {
       render() {

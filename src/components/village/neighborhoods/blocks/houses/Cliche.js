@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { Col } from 'react-bootstrap'
 
 export default class Cliche extends React.Component {

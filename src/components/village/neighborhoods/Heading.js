@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Grid , Row, Col } from 'react-bootstrap';
+import React from 'react'
+import { Grid , Row, Col } from 'react-bootstrap'
 import FadeShow from './blocks/houses/Fade Show.js'
-import Cliche from './blocks/houses/Cliche.js';
+import Cliche from './blocks/houses/Cliche.js'
 
 
 export default class Heading extends React.Component {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Glyphicon, Col, Row } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import BuzzMe from './Buzz Me'
 
 export default class ProfileInfo extends React.Component {

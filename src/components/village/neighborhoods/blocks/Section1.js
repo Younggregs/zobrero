@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Col } from 'react-bootstrap';
+import React from 'react'
+import { Col } from 'react-bootstrap'
 import CallImage from './houses/Call Image.js'
-import CallCliche from './houses/Call Cliche.js';
+import CallCliche from './houses/Call Cliche.js'
 
 
 export default class Section1 extends React.Component {

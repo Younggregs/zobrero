@@ -1,6 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { Grid , Row, Col } from 'react-bootstrap'
+import { Grid , Row } from 'react-bootstrap'
 import HomeNavigation from './neighborhoods/Home Navigation'
 import Heading from './neighborhoods/blocks/houses/Heading'
 import CallHistory from './neighborhoods/Call History'

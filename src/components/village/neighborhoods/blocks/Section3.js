@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Row, Col } from 'react-bootstrap';
+import React from 'react'
+import { Row, Col } from 'react-bootstrap'
 import DoneImage from './houses/Done Image.js'
-import DoneCliche from './houses/Done Cliche.js';
+import DoneCliche from './houses/Done Cliche.js'
 
 
 export default class Section3 extends React.Component {

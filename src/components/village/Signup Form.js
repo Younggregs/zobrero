@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { Form, Button,FormGroup, FormControl, ControlLabel, HelpBlock ,Row,Col} from 'react-bootstrap';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Button,FormGroup, FormControl, ControlLabel, HelpBlock ,Row,Col} from 'react-bootstrap'
 
 export default class SignupForm extends React.Component {
 

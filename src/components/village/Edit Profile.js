@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { Grid , Row, Col } from 'react-bootstrap'
 import HomeNavigation from './neighborhoods/Home Navigation'
 import EditProfileView from './neighborhoods/Edit Profile View'

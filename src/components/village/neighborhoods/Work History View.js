@@ -1,9 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { Grid, Row, Col, Glyphicon } from 'react-bootstrap';
-import Heading from './blocks/houses/Heading.js';
-import WorkHistoryList from './blocks/Work History List.js';
+import React from 'react'
+import { Grid, Row, Col, Glyphicon } from 'react-bootstrap'
+import Heading from './blocks/houses/Heading.js'
+import WorkHistoryList from './blocks/Work History List.js'
 
 export default class WorkHistoryView extends React.Component {
        render() {

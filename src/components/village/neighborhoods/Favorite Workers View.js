@@ -1,9 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { Grid, Row, Col, Glyphicon } from 'react-bootstrap';
-import Heading from './blocks/houses/Heading.js';
-import FavoriteList from './Favorite List.js';
+import React from 'react'
+import { Grid, Row, Col, Glyphicon } from 'react-bootstrap'
+import Heading from './blocks/houses/Heading.js'
+import FavoriteList from './Favorite List.js'
 
 export default class FavoriteWorkersView extends React.Component {
        render() {

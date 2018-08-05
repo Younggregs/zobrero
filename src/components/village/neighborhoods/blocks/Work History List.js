@@ -1,9 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { Col, Media, Glyphicon } from 'react-bootstrap';
-import ThreadImage from './houses/Thread Image.js';
-import ThreadMessage from './houses/Thread Message.js';
+import React from 'react'
+import { Col, Media, Glyphicon } from 'react-bootstrap'
+import ThreadImage from './houses/Thread Image.js'
+import ThreadMessage from './houses/Thread Message.js'
 
 export default class CallHistory extends React.Component {
        render() {

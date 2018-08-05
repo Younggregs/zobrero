@@ -1,7 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { Col, Form, Button,FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap';
+import React from 'react'
+import { Col, Form, Button,FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap'
 
 export default class EditProfileForm extends React.Component {
 

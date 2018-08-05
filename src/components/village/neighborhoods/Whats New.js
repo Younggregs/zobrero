@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Row } from 'react-bootstrap';
-import Heading from './blocks/houses/Heading.js';
-import Thread from './blocks/Thread.js';
+import React from 'react'
+import { Row } from 'react-bootstrap'
+import Heading from './blocks/houses/Heading.js'
+import Thread from './blocks/Thread.js'
 
 export default class WhatsNew extends React.Component {
 

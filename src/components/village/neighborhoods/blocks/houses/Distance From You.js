@@ -1,6 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Col, Button } from 'react-bootstrap';
+import React from 'react'
 
 export default class DistanceFromYou extends React.Component {
        render() {

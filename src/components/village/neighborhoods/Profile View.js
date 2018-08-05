@@ -1,6 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { Link } from 'react-router-dom'
 import { Grid, Row, Col } from 'react-bootstrap'
 import ProfileImage from './blocks/houses/Profile Image'
 import ProfileInfo from './blocks/houses/Profile Info'

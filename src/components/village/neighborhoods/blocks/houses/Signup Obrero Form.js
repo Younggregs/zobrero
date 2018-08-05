@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
-import { Col, Row, Form, Button,FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap';
+import React from 'react'
+import { Link, Redirect } from 'react-router-dom'
+import { Col, Row,Button,FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap'
 import { login } from './auth/Auth'
 
 export default class SignupForm extends React.Component {

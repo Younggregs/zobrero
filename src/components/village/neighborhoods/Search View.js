@@ -1,10 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Button, Form, Thumbnail, FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
-import ProfileInfo from './blocks/houses/Profile Info.js';
-import DistanceFromYou from './blocks/houses/Distance From You.js';
-import ProfileImage from './blocks/houses/Profile Image.js';
-import ProfileOptions from './blocks/houses/Profile Options.js';
+import { Button, Form, Thumbnail, FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap'
+import ProfileInfo from './blocks/houses/Profile Info.js'
 
 
 export default class SearchView extends React.Component {

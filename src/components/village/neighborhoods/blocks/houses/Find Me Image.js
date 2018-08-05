@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Image } from 'react-bootstrap'
 
 export default class FindMeImage extends React.Component {

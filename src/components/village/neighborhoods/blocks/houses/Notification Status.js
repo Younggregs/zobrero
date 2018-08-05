@@ -1,16 +1,18 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Button, Col, Row } from 'react-bootstrap'
 
 export default class NotificationStatus extends React.Component {
 
     state = {
         statusList : [],
         status : 'All',
-        statusNotifList: [],
+        appointmentRegister: [],
         media: null
     }
 
     async componentDidMount(){    
+
         try {
           const res = await fetch('http://198.187.30.71:8000/status/');
           const statusList = await res.json();
@@ -22,12 +24,19 @@ export default class NotificationStatus extends React.Component {
           console.log(e);
     }    
 
+    const auth = localStorage.getItem('auth_code')
 
     try {
-        const res = await fetch('http://198.187.30.71:8000/notifs/');
-        const statusNotifList = await res.json();
+        const res = await fetch('http://198.187.30.71:8000/appointment_register/all', {
+
+          headers : {
+            'Authorization' : 'Token ' + auth
+          }
+
+        });
+        const appointmentRegister = await res.json();
         this.setState({
-          statusNotifList
+          appointmentRegister
         });
   
       } catch (e) {
@@ -40,9 +49,18 @@ export default class NotificationStatus extends React.Component {
 async newStatus(id,status) {
 
     this.setState({status: status})
+    
+    const auth = localStorage.getItem('auth_code')
 
     try {
-      const res = await fetch('http://198.187.30.71:8000/notifs/');
+      const res = await fetch('http://198.187.30.71:8000/appointment_register/' + this.state.status, {
+
+        headers : {
+          'Authorization' : 'Token ' + auth
+        }
+
+
+      });
       const categoryProductList = await res.json();
       this.setState({
         categoryProductList
@@ -63,6 +81,8 @@ async newStatus(id,status) {
        render() {
          return (
         <section className="notif-status">
+        <Row>
+          <Col lg={6} lgOffset={3} md={6} mdOffset={3} sm={12} xs={12}>
 
         <div class="scrolling-wrapper">
             <div class="card">
@@ -78,8 +98,27 @@ async newStatus(id,status) {
         <div className="notif-title">
            <p>{this.state.status} appointments</p>
         </div>
+          
+           </Col>
+           </Row>
 
+           <Row>
+           <Col lg={6} lgOffset={3} md={6} mdOffset={3} sm={12} xs={12}>
+              {this.state.appointmentRegister.map(item => (
+                <div>
+                  <p><Link to={`/profile/${ item.client_id } `}>
+                    Client : {item.client}
+                  </Link></p>
+                  <p>Task : {item.task}</p>
+                  <p>Description : {item.description}</p>
+                  <p>Status : {item.status}</p>
+                  <p>Date-Time: {item.date_time}</p>
+                </div>
+              ))}
+           </Col>
+           </Row>
            </section>
          )
        }
   }
+  

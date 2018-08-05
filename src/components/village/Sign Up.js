@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Grid , Row, Col } from 'react-bootstrap';
-import SignupForm from './neighborhoods/blocks/houses/Signup Form.js';
+import React from 'react'
+import { Grid , Row, Col } from 'react-bootstrap'
+import SignupForm from './neighborhoods/blocks/houses/Signup Form.js'
 
 
 export default class SignUp extends React.Component {

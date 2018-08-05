@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Row, Col } from 'react-bootstrap';
+import React from 'react'
+import { Row, Col } from 'react-bootstrap'
 import FindMeImage from './houses/Find Me Image.js'
-import FindMeCliche from './houses/Find Me Cliche.js';
+import FindMeCliche from './houses/Find Me Cliche.js'
 
 
 export default class Section0 extends React.Component {

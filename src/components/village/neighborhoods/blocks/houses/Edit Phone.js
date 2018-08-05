@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { Redirect } from 'react-router-dom' 
-import { Button,FormGroup, FormControl, HelpBlock } from 'react-bootstrap';
+import { Button,FormGroup, FormControl, HelpBlock } from 'react-bootstrap'
 import Heading from './Heading'
 
 

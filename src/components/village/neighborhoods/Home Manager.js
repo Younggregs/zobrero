@@ -1,16 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { Navbar,FormGroup, FormControl, Button, Glyphicon, Grid, Row, Col, Nav, NavItem } from 'react-bootstrap';
-import ProfileInfo from './blocks/houses/Profile Info.js';
-import BuzzMe from './blocks/houses/Buzz Me.js';
-import DistanceFromYou from './blocks/houses/Distance From You.js';
-import ProfileImage from './blocks/houses/Profile Image.js';
-import ProfileOptions from './blocks/houses/Profile Options.js';
-import RecentActivity from './Recent Activity.js';
-import TopRated from './Top Rated.js';
-import WhatsNew from './Whats New.js';
-import SearchView from './Search View.js';
+import React from 'react'
+import { Grid, Row, Col } from 'react-bootstrap'
+import ProfileInfo from './blocks/houses/Profile Info.js'
+import BuzzMe from './blocks/houses/Buzz Me.js'
+import DistanceFromYou from './blocks/houses/Distance From You.js'
+import ProfileImage from './blocks/houses/Profile Image.js'
+import ProfileOptions from './blocks/houses/Profile Options.js'
+import RecentActivity from './Recent Activity.js'
+import TopRated from './Top Rated.js'
+import WhatsNew from './Whats New.js'
 
 
 export default class HomeManager extends React.Component {

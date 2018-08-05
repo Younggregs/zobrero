@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap'
 
 export default class About extends React.Component {
        render() {

@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Col } from 'react-bootstrap';
+import React from 'react'
+import { Col } from 'react-bootstrap'
 import WorkImage from './houses/Work Image.js'
-import WorkCliche from './houses/Work Cliche.js';
+import WorkCliche from './houses/Work Cliche.js'
 
 
 export default class Section2 extends React.Component {

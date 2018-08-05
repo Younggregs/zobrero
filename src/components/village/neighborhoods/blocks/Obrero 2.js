@@ -1,10 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { Col,Row, Thumbnail, Glyphicon } from 'react-bootstrap';
-import BuzzMe from './houses/Buzz Me.js';
-import ProfileInfo from './houses/Profile Info.js';
-import CallerImage from './houses/Caller Image.js';
+import React from 'react'
+import { Col,Row, Thumbnail, Glyphicon } from 'react-bootstrap'
+import ProfileInfo from './houses/Profile Info.js'
 
 export default class Obrero2 extends React.Component {
 

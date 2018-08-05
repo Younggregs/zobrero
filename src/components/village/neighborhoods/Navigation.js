@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
 import { Navbar,FormGroup, FormControl,InputGroup, Glyphicon, Button, Grid, Row, Col, Form, Media } from 'react-bootstrap';
 import ProfileInfo from './blocks/houses/Profile Info'
@@ -7,7 +6,6 @@ import AppName from './blocks/houses/App Name'
 import BuzzMe from './blocks/houses/Buzz Me'
 import DistanceFromYou from './blocks/houses/Distance From You'
 import ProfileImage from './blocks/houses/Profile Image'
-import ProfileOptions from './blocks/houses/Profile Options'
 
 
 export default class Navigation extends React.Component {

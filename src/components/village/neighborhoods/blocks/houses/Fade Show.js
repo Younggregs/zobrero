@@ -1,6 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Carousel } from 'react-bootstrap';
+import React from 'react'
+import { Carousel } from 'react-bootstrap'
 
 export default class FadeShow extends React.Component {
        render() {

@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SearchView from './neighborhoods/Search View.js';
-import HomeNavigation from './neighborhoods/Home Navigation.js';
+import React from 'react'
+import SearchView from './neighborhoods/Search View.js'
+import HomeNavigation from './neighborhoods/Home Navigation.js'
 
 export default class Search extends React.Component {
 

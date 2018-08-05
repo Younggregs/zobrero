@@ -1,9 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { Col, Media, Glyphicon } from 'react-bootstrap';
-import ThreadDP from './houses/Thread D P.js';
-import ThreadMessage from './houses/Thread Message.js';
+import React from 'react'
+import { Col, Media } from 'react-bootstrap'
+import ThreadDP from './houses/Thread D P.js'
+import ThreadMessage from './houses/Thread Message.js'
 
 export default class Thread extends React.Component {
        render() {

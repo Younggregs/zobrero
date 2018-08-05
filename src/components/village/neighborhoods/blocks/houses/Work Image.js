@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
 
 export default class WorkImage extends React.Component {
        render() {

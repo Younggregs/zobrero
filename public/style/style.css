@@ -29,6 +29,10 @@ a{
   color:black;
 }
 
+.footer{
+  background-color:  rgb(23, 15, 77);
+}
+
 .app-landingsearch a{
   color:black;
 }
@@ -48,7 +52,7 @@ a{
   position: fixed;
   padding-left: 30px;
   margin-top: 100px;
-
+ 
 }
 
 .cross-roads{
@@ -337,7 +341,7 @@ img{
 
 .call-cliche{
   text-align: center;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-family: "Share Tech";
   padding-top: 60px;
 }
@@ -466,13 +470,6 @@ img{
   text-align: center;
 }
 
-.footer{
-  background-color: darkslateblue;
-  height: 300px;
-  color: white;
-  font-size: .89em;
-}
-
 .profile-display{
   font-size: .5em;
 }
@@ -480,6 +477,7 @@ img{
 
 .about{
   padding-top: 15px;
+  background-color: rgb(23, 15, 77);
 }
 
 .go-to-top{
@@ -490,8 +488,9 @@ img{
 }
 
 .copyright{
-  background-color: darkgrey;
+  background-color: white;
   text-align: center;
+  color: darkslateblue;
   font-size: .98em;
   padding: 15px;
   font-family: "Share Tech";
