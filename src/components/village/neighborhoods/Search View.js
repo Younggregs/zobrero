@@ -1,6 +1,10 @@
 import React from 'react'
-import { Button, Form, Thumbnail, FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap'
-import ProfileInfo from './blocks/houses/Profile Info.js'
+import { Link } from 'react-router-dom'
+import { Button, Form, Thumbnail, FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
+import ProfileInfo from './blocks/houses/Profile Info.js';
+import DistanceFromYou from './blocks/houses/Distance From You.js';
+import ProfileImage from './blocks/houses/Profile Image.js';
+import ProfileOptions from './blocks/houses/Profile Options.js';
 
 
 export default class SearchView extends React.Component {
@@ -98,9 +102,9 @@ export default class SearchView extends React.Component {
                   name="search_phrase"
                   placeholder="Find help...  "
                   inputRef={(ref) => { this.inputSearchPhrase = ref; }}
-                />
 
 
+                  />
       <InputGroup.Button>
         <Button onClick={this.getSearchPhrase.bind(this)}><Glyphicon glyph="search"/></Button>
       </InputGroup.Button>

@@ -6,7 +6,7 @@ export default class CallCliche extends React.Component {
            <section className="call-cliche">
              <p>Create appointment with me</p>
              <p>You could also </p>
-             <p>Call/message me </p>       
+             <p>Call/message me </p>
            </section>
          )
        }

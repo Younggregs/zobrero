@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Image } from 'react-bootstrap'
 
 export default class CallImage extends React.Component {
        render() {
          return (
-           <section className="call-image">
-               <img width={550} height={550} src={ require ('./images/client_1.jpg') } alt="thumbnail"/>
-           </section>
+          <section>
+
+               <Image src={ require ('./images/appointment.png') } alt="thumbnail" responsive/>
+
+          </section>
          )
        }
   }

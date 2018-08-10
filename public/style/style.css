@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech');
-@import url('https://fonts.googleapis.com/css?family=Share+Tech');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 
 
 body{
   background: white;
+}
+
+.navbar{
+  color: darkslateblue;
 }
 
 
@@ -24,6 +28,10 @@ a{
   color: white;
 }
 
+.profile-info{
+  text-align: center;
+}
+
 
 #app-name a{
   color:black;
@@ -37,23 +45,88 @@ a{
   color:black;
 }
 
+
 .navigation{
   background-color: white;
   border-bottom: 1px;
-  border-bottom-color: black;
-  border-bottom-style: groove;
+  color:white;
+  border-bottom-style: solid;
+  border-bottom-color: gainsboro;
+  border-bottom-width: 1px;
   font-size: 1.48em;
-  padding-top:5px;
-  height: 70px;
+  padding-top:20px;
+  padding-left: 25px;
+  height: 90px;
+  font-family: "Work Sans";
 }
 
+.side-menu a{
+  color: darkslateblue;
+  font-size: 1.3em;
+  font-family: "Work Sans"
+}
 
 .side-menu{
   position: fixed;
   padding-left: 30px;
   margin-top: 100px;
- 
 }
+
+.menu-nav a{
+  color: orange
+}
+
+.menu-nav{
+ background-color: white;
+ font-weight: bold;
+ padding: 10px;
+}
+
+.menu-text{
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+.menu-header{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.menu-body{
+  padding: 10px;
+}
+
+.menu{
+  padding-top: 30px;
+}
+
+.menu-navigation{
+  background-color: rgb(7, 3, 31);
+  height: 60px;
+  color: white;
+  text-align: center;
+  font-size: 1.68em;
+  padding-top: 10px;
+}
+
+.menu-navigation a{
+  color:white;
+}
+
+
+.question{
+  font-weight: bold;
+}
+
+.answer{
+  padding-left: 30px;
+}
+
+
+
+
+
 
 .cross-roads{
   padding-top: 15px;
@@ -112,6 +185,12 @@ a{
 .chats{
   margin-bottom: 30px;
 }
+
+.image-animation{
+  transform: rotate(30deg);
+
+}
+
 
 .profile-image{
   font-size: 0;
@@ -207,6 +286,12 @@ img{
   margin-bottom: 10px;
 }
 
+.illustration{
+  background-color: white;
+  padding: 20px;
+}
+
+
 .glyphs-home{
   color:darkslateblue;
   font-size: 1.9em;
@@ -242,7 +327,7 @@ img{
   color:white;
   text-align: center;
   background-color: darkslateblue;
-  font-family: "Audiowide";
+  font-family: "Work Sans";
 }
 
 
@@ -253,10 +338,6 @@ img{
   border-style: dotted;
   padding: 20px;
   height: 450px;
-}
-
-.heading-show{
-  margin-top: 80px;
 }
 
 .app-landingsearch{
@@ -286,16 +367,13 @@ img{
   text-align: left;
 }
 
-.done-cliche{
-  text-align: center;
-  font-size: 3.5em;
-  font-family: "Share Tech";
-}
-
 .find-me-cliche{
-  text-align: center;
   font-size: 3.5em;
-  font-family: "Share Tech";
+  text-align: center;
+  font-weight: bold;
+  font-family: "Work Sans";
+  padding-top: 100px;
+  color: white;
 }
 
 .done-image{
@@ -310,13 +388,16 @@ img{
   object-fit: contain;
 }
 
-.fade-show{
+.how-it-works a{
+  color: rgb(196, 12, 12);
+  font-family: "Work Sans";
 
 }
 
 .how-it-works{
   text-align: center;
   font-size: 3.5em;
+  color: red;
   font-family: "Share Tech";
 }
 
@@ -328,42 +409,76 @@ img{
 }
 
 .cliche{
-  font-size: 2.5em;
-  font-family: "Share Tech";
-  padding-top: 60px;
+  font-size: 3.5em;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Work Sans";
+  padding-top: 100px;
 }
 
 .cliche-sm{
   font-size: 1.8em;
-  font-family: "Share Tech";
-  padding-top: 20px;
+  text-align: center;
+  font-family: "Work Sans";
+  padding-top: 100px;
 }
 
 .call-cliche{
+  font-size: 3.5em;
   text-align: center;
-  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Work Sans";
   font-family: "Share Tech";
   padding-top: 60px;
+  color: white;
 }
 
 .work-cliche{
-  text-align: center;
   font-size: 3.5em;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Work Sans";
   padding-top: 60px;
   font-family: "Share Tech";
+  color: white;
 }
 
 .done-cliche{
-  text-align: center;
   font-size: 3.5em;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Work Sans";
   padding-top: 60px;
-  font-family: "Share Tech";
+  color: green;
+}
+
+
+.section-0{
+  background: red;
+  padding-top: 200px;
+  height: 650px;
+
 }
 
 .section-1{
-  padding-top:20px;
-  padding-bottom: 50px;
+  background: blue;
+  padding-top: 100px;
+  height: 650px;
 }
+
+.section-2{
+  background: yellow;
+  padding-top: 200px;
+  height: 650px;
+}
+
+
+
+.section-3{
+  background-color: white;
+  padding-top: 100px;
+}
+
 
 .chat-table{
     background-color:white;
@@ -424,18 +539,6 @@ img{
 
 
 
-
-
-.section-2{
-  padding-top:20px;
-  padding-bottom: 50px;
-}
-
-.section-3{
-  padding-top:20px;
-  padding-bottom: 50px;
-}
-
 .no-chat{
   text-align: center;
   background-color: white;
@@ -455,7 +558,7 @@ img{
 }
 
 .app-name{
-  font-family: "Share Tech";
+  font-family: "Work Sans";
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -465,6 +568,12 @@ img{
   text-align: center;
   font-family: "Share Tech";
 }
+
+.space{
+  padding-top: 30px;
+}
+
+.how-it-works
 
 .profile{
   text-align: center;
@@ -515,13 +624,13 @@ img{
   margin-right: 3px;
   display: inline-block;
   border: 1px solid white;
-  min-width: 50px;
+  max-width: 200px;
   height: 100px;
   background: white;
 }
 
 .scrolling-wrapper, .scrolling-wrapper-flexbox {
-  height: 50px;
+  height: 200px;
   width: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -561,4 +670,36 @@ img{
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+
+
+/*********************appointments**************************/
+
+.scrolling-appointment-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-appointment-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.appointment-card {
+  flex: 0 0 auto;
+  margin-right: 3px;
+  display: inline-block;
+  border: 1px solid white;
+  min-width: 50px;
+  height: 100px;
+  background: white;
+}
+
+.scrolling-appointment-wrapper, .scrolling-appointment-wrapper-flexbox {
+  height: 50px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
 }

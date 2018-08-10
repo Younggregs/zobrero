@@ -21,7 +21,7 @@ export default class SideMenu extends React.Component {
                         </Link>
                     </p>
                   </li>
-                  
+
                   <li>
                     <p>
                         <Link to='/howto'>How To
@@ -33,14 +33,14 @@ export default class SideMenu extends React.Component {
 
                   <li>
                     <p>
-                        <Link to='/Feedback'>Feedback
+                        <Link to='/contact_us'>Contact Us
                         </Link>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                        <Link to='/report'>Reports and Complaints
+                        <Link to='/feedback'>Feedback
                         </Link>
                     </p>
                   </li>

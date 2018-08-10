@@ -19,6 +19,11 @@ import FavoriteWorkers from './components/village/Favorite Workers'
 import Notification from './components/village/Notification'
 import Phone from './components/village/Phone'
 import Chats from './components/village/Chats'
+import AboutUs from './components/village/About Us'
+import FAQ from './components/village/FAQ'
+import ContactUs from './components/village/Contact Us'
+import Feedback from './components/village/Feedback'
+import HowTo from './components/village/How To'
 import ForgotPassword from './components/village/Forgot Password'
 import ResetPassword from './components/village/Reset Password'
 import Logout from './components/village/Logout'
@@ -47,6 +52,11 @@ import Logout from './components/village/Logout'
                 <Route exact path="/reviews" component={Review}/>
                 <Route exact path="/favorite_workers" component={FavoriteWorkers}/>
                 <Route exact path="/notification" component={Notification}/>
+                <Route exact path="/about_us" component={AboutUs}/>
+                <Route exact path="/faq" component={FAQ}/>
+                <Route exact path="/contact_us" component={ContactUs}/>
+                <Route exact path="/feedback" component={Feedback}/>
+                <Route exact path="/howto" component={HowTo}/>
                 <Route exact path="/forgot_password" component={ForgotPassword}/>
                 <Route exact path="/reset_password/:reset_code" component={ResetPassword}/>
                 <Route exact path="/logout" component={Logout}/>
