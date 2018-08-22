@@ -80,7 +80,7 @@ const formInstance = (
 
   <Row>
    <Col lg={6} lgOffset={3} md={6} mdOffset={3} sm={12} xs={12}>
-   {this.state.statement.error_message ? (
+   {this.state.statement.message ? (
       <p className="err-msg">{this.state.statement.message}</p>
     ) : (
       <span></span>
