@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Row } from 'react-bootstrap'
+import { Row , Button} from 'react-bootstrap'
 import BuzzMe from './Buzz Me'
 
 export default class ProfileInfo extends React.Component {
