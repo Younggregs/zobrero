@@ -42,7 +42,7 @@ export default class Obrero2 extends React.Component {
          return (
         <section>
 
-  {this.emptyResult ? (
+  {this.emptyResult() ? (
          <Col lgOffset={2} mdOffset={2} smOffset={2} xsOffset={2}>
           <span>No Top rated yet</span>
          </Col>
