@@ -12,16 +12,22 @@ export default class ProfileInfo extends React.Component {
                <p>{this.props.talent}</p>
               </Row>
                <Row>
-              
+
                 <Link to={`/appointment/${ this.props.id } `}>
-                create appointment</Link> &nbsp;&nbsp;&nbsp;
-               
+                <Button>
+                appointment
+                </Button>
+                </Link> &nbsp;&nbsp;&nbsp;
+
                 <Link to={`/chat/${ this.props.id } `}>
-                message me</Link>
-                  
-                  
+                <Button>
+                message
+                </Button>
+                </Link>
+
+
                 <BuzzMe phone={this.props.phone}/>
-                  
+
                </Row>
            </section>
          )
