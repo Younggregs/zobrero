@@ -25,7 +25,7 @@ export default class Obrero2 extends React.Component {
 
         var empty_set = false
 
-        if(this.state.worker_list.length <= 0 ){
+        if(this.state.workerlist.length <= 0 ){
           empty_set = true
         }
 
