@@ -75,32 +75,32 @@ export default class Navigation extends React.Component {
                 <Form inline>
                   <FormGroup>
                     <FormControl
-                     type="text" 
-                     placeholder="Lets help you" 
-                     name="search_phrase" 
+                     type="text"
+                     placeholder="Lets help you"
+                     name="search_phrase"
                      id="search_phrase"
                      size="50"/>
-     
-                  <Button onClick={this.getSearchPhrase.bind(this)}>Help</Button>
+
+                  <Button onClick={this.getSearchPhrase.bind(this)} bsSyle="danger">Go</Button>
                   </FormGroup>
                 </Form>
                 </Col>
-               
 
-          
+
+
                 <Col lg={4} md={4} smHidden xsHidden>
                  <Link to="/help">
-                 <Button>
+                 <Button bsSyle="danger">
                   Help
                  </Button>
                  </Link>
-               
+
                  <Link to="/signin">
-                  <Button>Sign In</Button>
+                  <Button bsSyle="danger">Sign In</Button>
                  </Link>
-               
+
                  <Link to="/signup">
-                  <Button>Sign Up</Button>
+                  <Button bsSyle="danger">Sign Up</Button>
                  </Link>
                 </Col>
 
@@ -108,7 +108,7 @@ export default class Navigation extends React.Component {
                 </section>
                 </Col>
                </Row>
-              
+
 
 
               {this.state.is_search ? (
@@ -149,8 +149,8 @@ export default class Navigation extends React.Component {
 
                      )}
 
-                    
-                
+
+
 
 
                 <Col lgHidden mdHidden sm={12} xs={12}>
@@ -162,36 +162,36 @@ export default class Navigation extends React.Component {
 
                       <Col sm={3} xs={3}>
                        <Link to="/signin">
-                          <Button bsSize="sm">Sign In</Button>
+                          <Button bsSize="sm" bsSyle="danger">Sign In</Button>
                        </Link>
                       </Col>
 
                       <Col sm={3} xs={3}>
                        <Link to="/signup">
-                          <Button bsSize="sm">Sign Up</Button>
+                          <Button bsSize="sm" bsSyle="danger">Sign Up</Button>
                        </Link>
                       </Col>
 
                       <Col sm={3} xs={3}>
                        <Link to="/help">
-                          <Button bsSize="sm">Help</Button>
+                          <Button bsSize="sm" bsSyle="danger">Help</Button>
                        </Link>
                       </Col>
 
                         </Row>
-                      
+
       <Form inline>
              <FormGroup>
               <InputGroup>
-                <FormControl 
+                <FormControl
                   id="search_phrase_sm"
-                  type="text" 
+                  type="text"
                   name="search_phrase_sm"
                   placeholder="Find help...  "
                   inputRef={(ref) => { this.inputSearchPhrase = ref; }}
                 />
 
-      
+
             <InputGroup.Button>
                <Button onClick={this.getSearchPhrase2.bind(this)}><Glyphicon glyph="search"/></Button>
               </InputGroup.Button>

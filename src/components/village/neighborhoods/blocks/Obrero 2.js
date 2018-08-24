@@ -24,18 +24,18 @@ export default class Obrero2 extends React.Component {
     emptyResult(){
 
         var empty_set = false
-      
-        if(this.state.eshop_list.length <= 0 ){
+
+        if(this.state.worker_list.length <= 0 ){
           empty_set = true
         }
-      
+
         return empty_set
-        
-      
+
+
       }
-    
-    
-    
+
+
+
 
 
        render() {
@@ -51,47 +51,47 @@ export default class Obrero2 extends React.Component {
           <span>
           <Row>
           <Col lg={12} md={12} smHidden={12} xsHidden={12}>
-  
-          
+
+
             <Row>
                  {this.state.workerlist.map(item => (
               <Col lg={3} md={3}>
-  
+
                <Thumbnail href="/profile" src={ require ('./houses/images/client_1.jpg') } alt="thumbnail">
-                
+
                  <ProfileInfo firstname={item.firstname} lastname={item.lastname} talent={item.talent}/>
                  <p>Favorite Me
                  <span className="glyphs"><Glyphicon glyph="star-empty"/></span>
                  </p>
                </Thumbnail>
-  
+
                 </Col>
               ))}
-           
+
             </Row>
             </Col>
-            
+
             <Col lgHidden mdHidden sm={12} xs={12}>
             <div class="scrolling-wrapper">
-  
+
                  {this.state.workerlist.map(item => (
                 <div class="card">
-  
+
                <Thumbnail href="#" src={ require ('./houses/images/client_1.jpg') } alt="thumbnail">
-                
+
                  <ProfileInfo firstname={item.firstname} lastname={item.lastname} talent={item.talent}/>
                  <p>Favorite Me
                  <span className="glyphs"><Glyphicon glyph="star-empty"/></span>
                  </p>
                </Thumbnail><br />
-  
+
                 </div>
               ))}
-  
-  
+
+
               </div>
             </Col>
-  
+
           </Row>
           </span>
 
